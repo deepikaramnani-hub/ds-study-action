@@ -1,0 +1,17 @@
+name: Verify Email Action
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
+      - name: 25ds1000090@ds.study.iitm.ac.in
+        run: |
+          echo "Executing verification step for 25ds1000090@ds.study.iitm.ac.in"
